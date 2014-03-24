@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="./css/masterpage.css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+
+        <div id="header">
+            <h1 style="text-align:center; font:bold 20px arial, verdana;"> 
+                Wicked Easy Recipes</h1>
+            <h2 style="text-align:center; font:16px arial, verdana;">
+                Using 5 Ingedients or Less!</h2>
+            </div>
+
+        <div id="menu" style ="text-align: center; ">
+            &nbsp;&nbsp;&nbsp;
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" BackColor="Tan" BorderStyle="Solid" BorderWidth="1px" CssClass="popout" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="Black" PathSeparator="|" StaticSubMenuIndent="0px">
+                <DynamicHoverStyle BackColor="#284E98" BorderStyle="Groove" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <StaticHoverStyle BackColor="Tan" ForeColor="White" />
+                <StaticMenuItemStyle BorderStyle="Double" BorderWidth="5px" HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="Yellow" />
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" showstartingnode="false"/>
+            </div>
+        <div id="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+
+        <div id="footer" style="text-align:center">
+            &#169 2014. Jintan Bai from Software Design & Development 
+            </div>
+    </div>
+    </form>
+</body>
+</html>
