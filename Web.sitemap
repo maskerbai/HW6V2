@@ -7,7 +7,7 @@
 
     <siteMapNode url="~/editview.aspx" title="New Recipe"  description="" />
 
-    <siteMapNode url="" title="About Us"  description="" />
+    <siteMapNode url="~/aboutus.aspx" title="About Us"  description="" />
 
     <siteMapNode url="" title="Contact"  description="" />
 

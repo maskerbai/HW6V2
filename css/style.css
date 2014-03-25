@@ -1,0 +1,19 @@
+﻿.table {margin: 20px auto 20px 212px;
+        border:solid 5px white;
+        width: 379px;
+        background-color:coral;
+        font-family: Arial, Helvetica, sans-serif;
+        
+}
+.table2 {margin: 20px auto 20px 280px;
+         border:solid 5px white;
+        width: 270px;
+        background-color:coral;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.about {padding: 10px;
+          border:2px silver;
+          font-family: Arial, Helvetica, sans-serif;
+  
+}
