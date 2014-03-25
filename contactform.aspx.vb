@@ -1,9 +1,7 @@
-﻿'Add these two imports so you have access to the mail features.
-Imports System.Net.Mail
+﻿Imports System.Net.Mail
 Imports System.Net
 
-
-Partial Class _default
+Partial Class contactform
     Inherits System.Web.UI.Page
 
     Protected Sub sendMail_Click(sender As Object, e As EventArgs) Handles sendMail.Click
@@ -33,10 +31,5 @@ Partial Class _default
         'After the message has displayed for 2 seconds, "reload" the page.
         Response.AddHeader("REFRESH", "2;URL=default.aspx")
 
-
-    End Sub
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("./default.aspx")
     End Sub
 End Class
