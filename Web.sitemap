@@ -9,7 +9,7 @@
 
     <siteMapNode url="~/aboutus.aspx" title="About Us"  description="" />
 
-    <siteMapNode url="" title="Contact"  description="" />
+    <siteMapNode url="~/contact.aspx" title="Contact"  description="" />
 
 
   </siteMapNode>
