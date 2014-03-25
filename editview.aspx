@@ -42,7 +42,7 @@
             <asp:BoundField DataField="ing5" HeaderText="Ingredient #5" SortExpression="ing5" />
             <asp:BoundField DataField="pre" HeaderText="Preparation" SortExpression="pre" />
             <asp:BoundField DataField="notes" HeaderText="Notes" SortExpression="notes" />
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" ButtonType="Button" />
         </Fields>
     </asp:DetailsView>
 </asp:Content>

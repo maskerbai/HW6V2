@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Recipetable] WHERE [recID] = @recID" InsertCommand="INSERT INTO [Recipetable] ([recName], [submitBy], [ing1], [ing2], [ing3], [ing4], [ing5], [pre], [notes]) VALUES (@recName, @submitBy, @ing1, @ing2, @ing3, @ing4, @ing5, @pre, @notes)" SelectCommand="SELECT * FROM [Recipetable]" UpdateCommand="UPDATE [Recipetable] SET [recName] = @recName, [submitBy] = @submitBy, [ing1] = @ing1, [ing2] = @ing2, [ing3] = @ing3, [ing4] = @ing4, [ing5] = @ing5, [pre] = @pre, [notes] = @notes WHERE [recID] = @recID">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Recipetable] WHERE [recID] = @recID" InsertCommand="INSERT INTO [Recipetable] ([recName], [submitBy], [ing1], [ing2], [ing3], [ing4], [ing5], [pre], [notes]) VALUES (@recName, @submitBy, @ing1, @ing2, @ing3, @ing4, @ing5, @pre, @notes)" SelectCommand="SELECT * FROM [Recipetable] WHERE ([recID] = @recID)" UpdateCommand="UPDATE [Recipetable] SET [recName] = @recName, [submitBy] = @submitBy, [ing1] = @ing1, [ing2] = @ing2, [ing3] = @ing3, [ing4] = @ing4, [ing5] = @ing5, [pre] = @pre, [notes] = @notes WHERE [recID] = @recID">
         <DeleteParameters>
             <asp:Parameter Name="recID" Type="Int32" />
         </DeleteParameters>
@@ -18,6 +18,9 @@
             <asp:Parameter Name="pre" Type="String" />
             <asp:Parameter Name="notes" Type="String" />
         </InsertParameters>
+        <SelectParameters>
+            <asp:QueryStringParameter Name="recID" QueryStringField="recID" Type="Int32" />
+        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="recName" Type="String" />
             <asp:Parameter Name="submitBy" Type="String" />
@@ -42,7 +45,7 @@
             <asp:BoundField DataField="ing5" HeaderText="Ingredient #5" SortExpression="ing5" />
             <asp:BoundField DataField="pre" HeaderText="Preparation" SortExpression="pre" />
             <asp:BoundField DataField="notes" HeaderText="Notes" SortExpression="notes" />
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" />
         </Fields>
     </asp:DetailsView>
 </asp:Content>
