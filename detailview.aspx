@@ -3,6 +3,7 @@
 
         
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <title>Detail Recipes</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </asp:Content>
 

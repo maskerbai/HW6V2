@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="editview.aspx.vb" Inherits="detailview" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <title>Edit Recipe</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </asp:Content>
 
