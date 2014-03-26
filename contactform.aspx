@@ -7,6 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
     <form id="form1" >
+        <div id="contact">
 
         <!-- Check to see if you are in postback.  If not, display the contact form. -->
         <% If Not IsPostBack Then%>
@@ -31,7 +32,7 @@
 
         <!-- End your 'If' statement. -->
         <%End If%>
-
+            </div>
     </form>
 </asp:Content>
 
